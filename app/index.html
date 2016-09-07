@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ddnote</title>
-    <meta name="description" content="">
+    <title>天天笔记</title>
+    <meta name="description" content="笔记本，在线笔记本，云笔记，天天向上">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{content-for "head"}}
@@ -24,31 +24,7 @@
 
     <script src="http://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
     <script type="text/javascript">
-      $(document).ready(function(){
-          $(".ddnote-notebook-toggle").click(function() {
-              // 把另一个隐藏
-              $('.note-selector').hide();
-              // 设置另一个为非激活状态
-              $(".ddnote-note-toggle").removeClass('notebook-active');
-              if ($('.notebook-selector').is(":hidden")) {
-                  $(this).addClass('notebook-active');
-                  $('.notebook-selector').slideDown();
-              } else {
-                  $('.notebook-selector').slideUp();
-              }
-          });
-          $(".ddnote-note-toggle").click(function() {
-              $('.notebook-selector').hide();
-              // 设置另一个为非激活状态
-              $(".ddnote-notebook-toggle").removeClass('notebook-active');
-              if ($('.note-selector').is(":hidden")) {
-                  $(this).addClass('notebook-active');
-                  $('.note-selector').slideDown();
-              } else {
-                  $('.note-selector').slideUp();
-              }
-          });
-      });
+      
       </script>
 
     {{content-for "body-footer"}}

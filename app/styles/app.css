@@ -232,7 +232,28 @@ padding-bottom: 7px;
   .ddnote-main-container .inner {
     float: left;
   }
-
+    /*右上角三角形*/
+    .ddnote-main-container .inner .ddnote-star {
+        right: 0;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 70px solid rgb(249, 134, 141);
+        border-left: 40px solid transparent;
+        z-index: 1100;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    .ddnote-star-active {
+        border-top: 70px solid rgb(225, 57, 60) !important;
+    }
+    .ddnote-main-container .inner .ddnote-star i {
+        right: 0;
+        position: absolute;
+        padding: 5px;
+        margin-top: -65px;
+        color: white;
+    }
   .ddnote-main-container .inner .left-input-frame {
     height: 100vh;
     width: 49%;
