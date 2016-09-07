@@ -97,11 +97,11 @@
     display: inline;
   }
   .ddnote-note-comm .ddnote-note-type {
-    display: inherit;
+    /*display: inherit;*/
     cursor: pointer;
   }
   .ddnote-note-comm .ddnote-note {
-    display: inherit;
+    /*display: inherit;*/
     margin-left: 80px;
     cursor: pointer;
   }
@@ -149,8 +149,18 @@
     line-height: 24px;
     list-style-type: none;
     /*background: #666;*/
-    display: inline;
+    /*display: inline;*/
     position: absolute;
+    left: 160px;
+  }
+  .ddnote-note-comm .ddnote-note .notebook {
+      margin-left: 80px;
+  }
+  .ddnote-note-comm .ddnote-note .notebook li {
+      margin-left: 10px;
+  }
+  .ddnote-note-comm .ddnote-note .notebook li ul {
+      margin-left: -10px;
   }
   .ddnote-note-comm .notebook li {
     text-align: left;
