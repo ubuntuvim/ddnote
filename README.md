@@ -1,53 +1,23 @@
 # Ddnote
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+DDNOTE又名天天笔记，这是一个简单的笔记本应用，方便管理日常的代码笔记、文章笔记等等。
 
-## Prerequisites
 
-You will need the following things properly installed on your computer.
+## 项目安装
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+如果你也想拥有这样的一个简单的APP，你可以fork或者clone。
 
-## Installation
+* `git clone git@github.com:ubuntuvim/ddnote.git` 下载代码
+* 进入项目目录
+* `npm install` 安装NPM依赖
+* `bower install` 安装bower依赖
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+## 运行
 
-## Running / Development
+* 启动服务器，启动命令：`ember server`
+* 在浏览器访问[http://localhost:4200](http://localhost:4200)即可看到.
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+### 编译、发布
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+* `ember build --environment production` 打包项目，命令执行完毕代码会被打包到项目的`dist`目录下。
+* 得到编译后的代码可以直接复制到服务上运行

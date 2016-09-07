@@ -11,7 +11,7 @@
     background-color: #2ecc71;
     /*border-color: #e7e7e7;*/
     border: 0;
-    padding-top: 10px;
+    padding-top: 5px;
   }
   .ddnote-container {
     text-align: center;
@@ -54,6 +54,41 @@
     margin-left: 10px;
     cursor: pointer;
   }
+  /*顶部右边图片按钮下拉菜单*/
+  .ddnote-navbar-header-tools .profile-menu {
+    display: inherit;
+    position: absolute;
+    right: 0;
+    top: 35px;
+    width: 80px;
+    display: none;
+  }
+  .ddnote-navbar-header-tools .profile-menu li {
+      list-style-type: none;
+      background-color: #1abc9c;
+      padding-bottom: 2px;
+  }
+  .ddnote-navbar-header-tools .profile-menu li:hover {
+      background-color: #2fe2bf;
+  }
+  .ddnote-navbar-header-tools .profile-menu li a {
+      text-decoration: none;
+      color: white;
+      font-size: 13px;
+  }
+  /*顶部右边图片按钮*/
+  .ddnote-navbar-header-tools .user-profile {
+    display: inline;
+    clear: both;
+    float: right;
+    margin-top: -2px;
+    margin-right: -10px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .ddnote-navbar-header-tools .user-profile img {
+      border-radius: 50%;
+  }
   .ddnote-navbar-brand {
     padding: 5px;
     background-color: transparent;
@@ -83,18 +118,10 @@
     top: 2px;
   }
 
-
-  .vertical-divide {
-    height: 100vh;
-    width: 1px;
-    background-color: aqua;
-    margin-left: 49%;
-  }
-
   .ddnote-footer {
     background-color: #dedede;
     color: #555;
-    height: 20px;
+    height: 24px;
     position: fixed;
     bottom: 0px;
     width: 100%;
@@ -116,7 +143,7 @@
   }
   .ddnotebook-list {
     display: none;
-    margin-top: 5px;
+    margin-top: 4px;
   }
   .ddnote-note-comm .notebook {
     line-height: 24px;
@@ -213,7 +240,7 @@ padding-bottom: 7px;
   .ddnote-main-container .inner .right-preview-frame {
     height: 100vh;
       width: 49%;
-      border: 1px solid #ccc;
+      border-left: 1px solid #ccc;
       overflow: auto;
       position: absolute;
       top: 0;
