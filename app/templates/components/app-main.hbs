@@ -12,13 +12,16 @@
 				 <li>
 					 <a class="ddnote-notebook-toggle">笔记本<i class="iconfont">&#xe615;</i></a>
 					<ul class="ddnotebook-list notebook-selector">
-						<li><a href="#">入门一</a></li>
+						<li>
+                            <a contentEditable=false id="xx1" onblur={{action 'updateNotebook' 1}}
+                             onkeydown="if(event.keyCode === 13) return false;">入门一</a>
+                         </li>
 
-						<li><a href="#">入门二</a></li>
-						<li><a href="#">入门二</a></li>
-						<li><a href="#">入门二入门二</a></li>
-						<li><a href="#">入门二入门二入门二</a></li>
-						<li><a href="#">入门二</a></li>
+						<li><a contentEditable=false>入门二</a></li>
+						<li><a contentEditable=false>入门二</a></li>
+						<li><a contentEditable=false>入门二入门二</a></li>
+						<li><a contentEditable=false>入门二入门二入门二</a></li>
+						<li><a contentEditable=false>入门二</a></li>
 					</ul>
 				  </li>
 			   </ul>
@@ -29,13 +32,13 @@
 				 <li>
 					 <a class="ddnote-note-toggle">笔记<i class="iconfont">&#xe615;</i></a>
 					<ul class="ddnotebook-list note-selector">
-						<li><a href="#">入门一</a></li>
+						<li><a contentEditable=false>入门一</a></li>
 
-						<li><a href="#">入门二</a></li>
-						<li><a href="#">入门二</a></li>
-						<li><a href="#">入门二入门二</a></li>
-						<li><a href="#">入门二入门二入门二</a></li>
-						<li><a href="#">入门二</a></li>
+						<li><a contentEditable=false>入门二</a></li>
+						<li><a contentEditable=false>入门二</a></li>
+						<li><a contentEditable=false>入门二入门二</a></li>
+						<li><a contentEditable=false>入门二入门二入门二</a></li>
+						<li><a contentEditable=false>入门二</a></li>
 					</ul>
 				  </li>
 			   </ul>

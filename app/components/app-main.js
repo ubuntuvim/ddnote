@@ -46,5 +46,16 @@ export default Ember.Component.extend({
                 Ember.$('.ddnote-main-container .inner .ddnote-star i').html('&#xe603;');
             }
         });
+
+        //双击可编辑
+        Ember.$('.ddnote-note-comm .notebook li ul a').dblclick(function() {
+            Ember.$(this).attr('contentEditable', true);
+        });
+    },
+    actions: {
+        updateNotebook(id) {
+            console.log('notebook id = ' + id);
+            Ember.$("#xx1").attr('contentEditable', false);
+        }
     }
 });

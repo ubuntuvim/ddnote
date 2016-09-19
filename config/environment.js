@@ -6,7 +6,11 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
-    
+    // 野狗连接配置
+    wildember: {
+        syncDomain: "ddlisting.wilddog.com",
+        syncURL: "https://ddlisting.wilddogio.com" //输入节点 URL
+    },
     EmberENV: {
         FEATURES: {
             // Here you can enable experimental features on an ember canary build
